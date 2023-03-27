@@ -59,7 +59,8 @@
 //         console.log(i);
 //     }
 // }
-// console.log(loopToFive())
+// // console.log(loopToFive())
+// loopToFive()
 
 // 1. Crea un loop fino al numero 5 (non compreso)
 // 2. Al posto delle virgole bisogna mettere i punti e virgola
@@ -83,15 +84,15 @@
 function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i <= numbers.length - 1; i++) {
+    for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 === 0) {
             evenNumbers.push(numbers[i]);
         }
     }
-    console.log(evenNumbers);
+    // console.log(evenNumbers);
     return evenNumbers;
 }
-displayEvenNumbers(); // [2,4,6,8]
+console.log(displayEvenNumbers()); // [2,4,6,8]
 
 // 1. Pusha i numeri pari in una nuova array
 // 2. Return fuori dal ciclo For, punti e vinrgola, 
